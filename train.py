@@ -56,7 +56,7 @@ args = arg_parser.parse_args()
 deepspeed.init_distributed()
 
 
-class DataEngine():
+class DataEngine:
     def __init__(self, data_dir, tokenizer_path, micro_batch_size, max_length):
         self.MIN_TEXT_LEN = 20
         self.EOS_TOKEN_ID = 2
